@@ -4,7 +4,7 @@ import { parnertData } from "./data";
 
 const Hero = () => {
   return (
-    <div className=" bg-custom-main w-full h-[100vh] flex justify-center items-center">
+    <div className=" bg-custom-main w-full min-h-[100vh] flex justify-center items-center pt-24">
       <div className="w-full px-5 md:px-52 grid grid-cols-1 md:grid-cols-2 gap-10">
         <div className="md:order-last flex justify-center items-center">
           <Image
@@ -37,7 +37,7 @@ const Hero = () => {
             />
           </div>
           <div className="flex gap-2">
-            <p className=" text-custom-ligthgrey text-sm">Sponsored by : </p>
+            <p className=" text-custom-ligthgrey text-xs md:text-sm">Sponsored by : </p>
             <div className="flex gap-6 justify-center items-center">
               {parnertData.map((item, index) => (
                 <Image
@@ -46,7 +46,7 @@ const Hero = () => {
                   width={1000}
                   height={500}
                   alt={item.alt}
-                  className=" w-20 h-full object-contain"
+                  className=" w-16 md:w-20 h-full object-contain"
                 />
               ))}
             </div>

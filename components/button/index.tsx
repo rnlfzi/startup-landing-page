@@ -10,7 +10,7 @@ const Button = ({ onClick, variant, size, label }: ButtonProps) => {
       );
     case "outlined":
       return (
-        <div className="border-2 border-custom-secondary px-4 py-2 text-custom-secondary rounded text-sm cursor-pointer">
+        <div className="border-2 bg-custom-main border-custom-secondary px-4 py-2 text-custom-secondary rounded text-sm cursor-pointer">
           {label}
         </div>
       );
