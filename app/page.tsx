@@ -9,6 +9,7 @@ import Testimonial from "@/components/testimonial";
 import Video from "@/components/video";
 
 export default function Home() {
+  console.log("Home Page");
   return (
     <div>
       <Navbar />
